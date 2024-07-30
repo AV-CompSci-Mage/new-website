@@ -16,6 +16,7 @@
     --gem5-background: #F6F8FA;
     --gem5-light: #c8eaf3;
     --gem5-dark: #00627a;
+    --gem5-gray: #77787b;
 
     --code-line-height: 2rem;
     --code-font-size: 1.4rem;
@@ -95,8 +96,9 @@ footer img {
 /* For the page number */
 section::after {
     right: -50px;
-    bottom: -50px;
+    bottom: -55px;
     font-size: 80%;
+    color: var(--gem5-light);
 }
 
 a {
@@ -216,6 +218,11 @@ section.start h2 {
     -webkit-text-fill-color: transparent;
 }
 
+/* Remove the triangle */
+section.start h2::before {
+    border: none;
+}
+
 /****************************************************/
 /* For 5 column/full outline */
 
@@ -292,16 +299,32 @@ pre {
     border-radius: 5px;
     line-height: var(--code-line-height);
     background-color: #ffffff;
+    box-shadow: 1px 2px 4px var(--gem5-gray);
 }
 
 code {
     font-family: "Roboto Mono", monospace;
     background-color: #ffffff;
+    font-size: var(--code-font-size);
 }
 
-/* Avoids setting font-size for <code> in headers */
-:not(h1, h2, h3, h4) code {
-    font-size: var(--code-font-size);
+/* Forces inherited height for code in headers */
+:is(h1, h2, h3, h4, h5, h6) code {
+    font-size: inherit !important;
+}
+
+/* Targets only inline code */
+:not(pre) > code {
+    font-size: calc(var(--code-font-size) * 0.9);
+    padding: 2px 6px;
+    border: 1px solid var(--gem5-gray);
+    border-radius: 5px;
+}
+
+/* Targets hyperlinks that contain code */
+a:has(code) {
+    /* Removes underlines */
+    text-decoration: none;
 }
 
 /*!

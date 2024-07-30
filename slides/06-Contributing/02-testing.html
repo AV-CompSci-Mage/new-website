@@ -7,7 +7,7 @@
  * @auto-scaling true
  * @size 16:9 1280px 720px
  * @size 4:3 960px 720px
- */div#\:\$p>svg>foreignObject>:where(section):not([root]){--gem5-gem5:#008EB0;--gem5-background:#F6F8FA;--gem5-light:#c8eaf3;--gem5-dark:#00627a;--code-line-height:calc(var(--marpit-root-font-size, 1rem) * 2);--code-font-size:calc(var(--marpit-root-font-size, 1rem) * 1.4)}div#\:\$p>svg>foreignObject>section{color:black;font-size:calc(var(--marpit-root-font-size, 1rem) * 1.6);font-family:sans-serif;line-height:calc(var(--marpit-root-font-size, 1rem) * 2);padding:70px;background-color:var(--gem5-background);background-image:url("../themes/gem5ColorLong.svg");background-repeat:no-repeat;background-position-x:center;background-size:220px;background-position-y:97%}div#\:\$p>svg>foreignObject>section{--marpit-root-font-size:calc(var(--marpit-root-font-size, 1rem) * 1.6)}div#\:\$p>svg>foreignObject>section li{margin-bottom:calc(var(--marpit-root-font-size, 1rem) * 0.2)}div#\:\$p>svg>foreignObject>section ul{margin-bottom:calc(var(--marpit-root-font-size, 1rem) * 0.5)}
+ */div#\:\$p>svg>foreignObject>:where(section):not([root]){--gem5-gem5:#008EB0;--gem5-background:#F6F8FA;--gem5-light:#c8eaf3;--gem5-dark:#00627a;--gem5-gray:#77787b;--code-line-height:calc(var(--marpit-root-font-size, 1rem) * 2);--code-font-size:calc(var(--marpit-root-font-size, 1rem) * 1.4)}div#\:\$p>svg>foreignObject>section{color:black;font-size:calc(var(--marpit-root-font-size, 1rem) * 1.6);font-family:sans-serif;line-height:calc(var(--marpit-root-font-size, 1rem) * 2);padding:70px;background-color:var(--gem5-background);background-image:url("../themes/gem5ColorLong.svg");background-repeat:no-repeat;background-position-x:center;background-size:220px;background-position-y:97%}div#\:\$p>svg>foreignObject>section{--marpit-root-font-size:calc(var(--marpit-root-font-size, 1rem) * 1.6)}div#\:\$p>svg>foreignObject>section li{margin-bottom:calc(var(--marpit-root-font-size, 1rem) * 0.2)}div#\:\$p>svg>foreignObject>section ul{margin-bottom:calc(var(--marpit-root-font-size, 1rem) * 0.5)}
 
 /* Move the title of the slide up a bit */div#\:\$p>svg>foreignObject>section>:first-child,div#\:\$p>svg>foreignObject>section>header:first-child+*{margin-top:0}
 
@@ -17,7 +17,7 @@
 
 /* Add an image to the bottom center of the page */div#\:\$p>svg>foreignObject>section footer{position:fixed;left:0;right:0;bottom:60px;height:100px;margin-bottom:-80px}div#\:\$p>svg>foreignObject>section footer img{height:60px;display:block;margin:0 auto}
 
-/* For the page number */div#\:\$p>svg>foreignObject>section:after{right:-50px;bottom:-50px;font-size:80%}div#\:\$p>svg>foreignObject>section:after{--marpit-root-font-size:80%}div#\:\$p>svg>foreignObject>section a{color:var(--gem5-gem5)}div#\:\$p>svg>foreignObject>section blockquote{position:relative;margin:calc(var(--marpit-root-font-size, 1rem) * 0.6) 0;padding:0 calc(var(--marpit-root-font-size, 1rem) * 1.2);border-left:4px solid var(--gem5-gem5);background-color:var(--gem5-light)}div#\:\$p>svg>foreignObject>section blockquote a{color:var(--gem5-dark)}
+/* For the page number */div#\:\$p>svg>foreignObject>section:after{right:-50px;bottom:-55px;font-size:80%;color:var(--gem5-light)}div#\:\$p>svg>foreignObject>section:after{--marpit-root-font-size:80%}div#\:\$p>svg>foreignObject>section a{color:var(--gem5-gem5)}div#\:\$p>svg>foreignObject>section blockquote{position:relative;margin:calc(var(--marpit-root-font-size, 1rem) * 0.6) 0;padding:0 calc(var(--marpit-root-font-size, 1rem) * 1.2);border-left:4px solid var(--gem5-gem5);background-color:var(--gem5-light)}div#\:\$p>svg>foreignObject>section blockquote a{color:var(--gem5-dark)}
 
 /****************************************************/
 /* For title page */
@@ -48,6 +48,8 @@
    Has a blue gradient. From Erin and Mysore
 */div#\:\$p>svg>foreignObject>section.start :is(h2,marp-h2){display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;height:100%;font-size:calc(var(--marpit-root-font-size, 1rem) * 4);font-weight:bold;line-height:75px;background:linear-gradient(to right,rgb(67,124,205),rgb(69,214,202));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
+/* Remove the triangle */div#\:\$p>svg>foreignObject>section.start :is(h2,marp-h2):before{border:none}
+
 /****************************************************/
 /* For 5 column/full outline */div#\:\$p>svg>foreignObject>section.outline :is(h2,marp-h2){column-span:all}div#\:\$p>svg>foreignObject>section.outline{column-count:5;font-size:calc(var(--marpit-root-font-size, 1rem) * 1.3);line-height:calc(var(--marpit-root-font-size, 1rem) * 1.3)}div#\:\$p>svg>foreignObject>section.outline{--marpit-root-font-size:calc(var(--marpit-root-font-size, 1rem) * 1.3)}div#\:\$p>svg>foreignObject>section.outline ul{list-style-type:none;padding:0;margin:0;padding-bottom:10px}div#\:\$p>svg>foreignObject>section.outline li{margin:0;padding-bottom:5px}div#\:\$p>svg>foreignObject>section.outline ul ul{list-style-type:"- ";padding-left:20px}div#\:\$p>svg>foreignObject>section.outline ul ul ul{display:none}div#\:\$p>svg>foreignObject>section.outline :is(h3,marp-h3){break-before:column}
 
@@ -55,9 +57,14 @@
 /* For reducing size of code blocks */div#\:\$p>svg>foreignObject>section.code-50-percent :is(pre,marp-pre){line-height:calc(var(--code-line-height) * 0.33)}div#\:\$p>svg>foreignObject>section.code-50-percent :is(pre,marp-pre) code{font-size:calc(var(--code-font-size) * 0.5)}div#\:\$p>svg>foreignObject>section.code-60-percent :is(pre,marp-pre){line-height:calc(var(--code-line-height) * 0.48)}div#\:\$p>svg>foreignObject>section.code-60-percent :is(pre,marp-pre) code{font-size:calc(var(--code-font-size) * 0.6)}div#\:\$p>svg>foreignObject>section.code-70-percent :is(pre,marp-pre){line-height:calc(var(--code-line-height) * 0.65)}div#\:\$p>svg>foreignObject>section.code-70-percent :is(pre,marp-pre) code{font-size:calc(var(--code-font-size) * 0.7)}div#\:\$p>svg>foreignObject>section.code-80-percent :is(pre,marp-pre){line-height:calc(var(--code-line-height) * 0.8)}div#\:\$p>svg>foreignObject>section.code-80-percent :is(pre,marp-pre) code{font-size:calc(var(--code-font-size) * 0.8)}
 
 /****************************************************/
-/* For code block */div#\:\$p>svg>foreignObject>section :is(pre,marp-pre){padding:10px;border-radius:5px;line-height:var(--code-line-height);background-color:#ffffff}div#\:\$p>svg>foreignObject>section code{font-family:"Roboto Mono",monospace;background-color:#ffffff}
+/* For code block */div#\:\$p>svg>foreignObject>section :is(pre,marp-pre){padding:10px;border-radius:5px;line-height:var(--code-line-height);background-color:#ffffff;box-shadow:1px 2px 4px var(--gem5-gray)}div#\:\$p>svg>foreignObject>section code{font-family:"Roboto Mono",monospace;background-color:#ffffff;font-size:var(--code-font-size)}
 
-/* Avoids setting font-size for <code> in headers */div#\:\$p>svg>foreignObject>section :not(:is(h1,marp-h1),:is(h2,marp-h2),:is(h3,marp-h3),:is(h4,marp-h4)) code{font-size:var(--code-font-size)}
+/* Forces inherited height for code in headers */div#\:\$p>svg>foreignObject>section :is(:is(h1,marp-h1),:is(h2,marp-h2),:is(h3,marp-h3),:is(h4,marp-h4),:is(h5,marp-h5),:is(h6,marp-h6)) code{font-size:inherit!important}
+
+/* Targets only inline code */div#\:\$p>svg>foreignObject>section :not(:is(pre,marp-pre))>code{font-size:calc(var(--code-font-size) * 0.9);padding:2px 6px;border:1px solid var(--gem5-gray);border-radius:5px}
+
+/* Targets hyperlinks that contain code */div#\:\$p>svg>foreignObject>section a:has(code){
+    /* Removes underlines */text-decoration:none}
 
 /*!
   Theme: Default
@@ -94,16 +101,16 @@ Typically this "required" baseline CSS is added by `makestuff.js` during build.
 
 /* Misc effects */div#\:\$p>svg>foreignObject>section .hljs-emphasis{font-style:italic}div#\:\$p>svg>foreignObject>section .hljs-strong{font-weight:bold}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure>figcaption{position:absolute;border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content],div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#\:\$p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-class="title" data-theme="gem5" lang="en-US" class="title" data-marpit-pagination="1" style="--paginate:true;--class:title;--theme:gem5;" data-marpit-pagination-total="21">
 <h1 id="gem5-tests">gem5 Tests</h1>
-<p>To check your changes to gem5 work, you should run some of our gem5 tests.</p>
+<p>To check that your changes to gem5 work, you should run some of our gem5 tests.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="2" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <h2 id="gem5-test-categories">gem5 Test Categories</h2>
 <p>We run tests on the gem5 codebases regularly to ensure that changes do not break the code.<br />
 These tests exist in 4 main categories;</p>
 <ol>
-<li><strong>CPP Unittests</strong>: These are tests that run C++ code. In gem5, we use the Google Test framework.</li>
-<li><strong>Python Unittests</strong>: These are tests that run Python code. In gem5, we use the Python unittest framework.</li>
-<li><strong>TestLib Tests</strong>: These are tests that run gem5 simulations, verify exist codes, and compare outout to expected output (&quot;testlib&quot; is the name of the framework used to do this).</li>
+<li><strong>CPP Unit tests</strong>: These are tests that run C++ code. In gem5, we use the Google Test framework.</li>
+<li><strong>Python Unit tests</strong>: These are tests that run Python code. In gem5, we use the Python unittest framework.</li>
+<li><strong>TestLib Tests</strong>: These are tests that run gem5 simulations, verify exit codes, and compare output to expected output (&quot;testlib&quot; is the name of the framework used to do this).</li>
 <li><strong>Compilation Tests</strong>: Tests which compile gem5 under different configurations with different compilers/environments.</li>
 </ol>
 <p><strong>Note:</strong> There are some tests we run which don't fit into these categories, but these are the main ones.</p>
@@ -111,66 +118,65 @@ These tests exist in 4 main categories;</p>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="3" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <h2 id="gem5-test-schedule">gem5 Test Schedule</h2>
 <ol>
-<li><strong>CI Tests</strong>: These tests are run on every pull request to gem5, and every update any pull request.<br />
-The CI tests consist of the CPP and Python unittests and a subset of the TestLib tests and Compilation tests.<br />
+<li><strong>CI Tests</strong>: These tests are run on every pull request to gem5, and every update to any pull request. The CI tests consist of the CPP and Python unit tests and a subset of the TestLib tests and Compilation tests.<br />
 These are designed to run &quot;quickly&quot; (by gem5 standards), in under 4 hours.</li>
 <li><strong>Daily Tests</strong>: These tests are run every day on the gem5 codebase.<br />
-These tests consists of the larger Testlib tests.<br />
-These tests typically take 12 hours or more to complete.</li>
+These tests consist of the larger Testlib tests.<br />
+They typically take 12 hours or more to complete.</li>
 <li><strong>Weekly Tests</strong>: These tests are run weekly on the gem5 codebase.<br />
 These tests consist of the largest Testlib test suite and the Compilation tests.<br />
 These tests typically take 1 to 2 days to complete.</li>
 <li><strong>Compiler Tests</strong>: These tests are run every week.<br />
-These run a cross product of gem5 compilation targets and compilers the project currently supports<br />
+These run a cross product of gem5 compilation targets and compilers the project currently supports.<br />
 These tests usually take around 12 hours to complete.</li>
 </ol>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="4" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
-<p>The complete GitHub Actions workflow for these tests can be found in the <a href="https://github.com/gem5/gem5/blob/v24.0/.github/workflows">.github/workflows/</a>.github/worlflows&quot; in the gem5 repository.</p>
+<p>The complete GitHub Actions workflow for these tests can be found in the <a href="https://github.com/gem5/gem5/blob/v24.0/.github/workflows">.github/workflows/</a> in the gem5 repository.</p>
 <p>We not go over these in this session but you can look over these yaml files and see how GitHub Actions is triggered to run these the gem5 tests.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="5" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
-<h2 id="cpp-unittests">CPP Unittests</h2>
-<p><a href="https://github.com/gem5/gem5/blob/v24.0/src/base/bitfield.test.cc">src/base/bitfield.test.cc</a> is a typical example of a CPP unittest in gem5.</p>
-<p>It is a GTest, more information on GTest can be found at <a href="https://google.github.io/googletest/">https://google.github.io/googletest/</a></p>
+<h2 id="cpp-unit-tests">CPP Unit tests</h2>
+<p><a href="https://github.com/gem5/gem5/blob/v24.0/src/base/bitfield.test.cc">src/base/bitfield.test.cc</a> is a typical example of a CPP unit test in gem5.</p>
+<p>It is a GTest. More information on GTest can be found at <a href="https://google.github.io/googletest/">https://google.github.io/googletest/</a></p>
 <p>The SConscript file in the same directory as the test file is used to build the test.</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">GTest(<span class="hljs-string">&#x27;bitfield.test&#x27;</span>, <span class="hljs-string">&#x27;bitfield.test.cc&#x27;</span>, <span class="hljs-string">&#x27;bitfield.cc&#x27;</span>)
 </code></pre>
 <p>The format is <code>GTest(&lt;test_name&gt;, &lt;test_source&gt;, &lt;source_files&gt;)</code>.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="6" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
-<h3 id="running-the-cpp-unittests">Running the CPP Unittests</h3>
-<p>You can run all unittests with  <code>scons build/ALL/unittests.opt</code> command.</p>
-<p>To run a specific tests:</p>
+<h3 id="running-the-cpp-unit-tests">Running the CPP Unit Tests</h3>
+<p>You can run all unit tests with  <code>scons build/ALL/unittests.opt</code> command.</p>
+<p>To run a specific test:</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-shell">scons build/ALL/base/bitfield.test.opt
 ./build/ALL/base/bitfield.test.opt
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="7" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
-<h2 id="python-unittests">Python Unittests</h2>
-<p><a href="https://github.com/gem5/gem5/blob/v24.0/tests/pyunit/util/pyunit_convert_check.py">tests/pyunit/util/pyunit_convert_check.py</a> is a typical example of a Python unittest in gem5.</p>
+<h2 id="python-unit-tests">Python Unit Tests</h2>
+<p><a href="https://github.com/gem5/gem5/blob/v24.0/tests/pyunit/util/pyunit_convert_check.py">tests/pyunit/util/pyunit_convert_check.py</a> is a typical example of a Python unit test in gem5.</p>
 <p>More information on Python's unittest framework can be found at <a href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></p>
-<p>The tests is run with <code>gem5 tests/run_pytests.py</code> command.<br />
+<p>The tests are run with <code>gem5 tests/run_pyunit.py</code> command.<br />
 In our case, any file in the &quot;tests/pyunit&quot; directory with the prefix &quot;pyunit_&quot; is considered a test by the test runner.</p>
-<p>Individual subdirectories in 'tests/pyunit&quot; can be specified and run separetely by passing those subdirectories as arguments to &quot;tests/run_pytests.py&quot;. E.g.: <code>gem5 tests/run_pytests.py tests/pyunit/util</code>.</p>
+<p>Individual subdirectories in 'tests/pyunit&quot; can be specified and run separately by passing those subdirectories as arguments to &quot;tests/run_pytests.py&quot;. E.g.: <code>gem5 tests/run_pyunit.py --directory tests/pyunit/util</code>.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="8" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <h2 id="compiler-tests">Compiler Tests</h2>
 <p>Compiler tests are run weekly on the gem5 codebase.</p>
-<p>These tests are specified directly in a GitHub Action workflow: <a href="https://github.com/gem5/gem5/blob/v24.0/.github/workflows/compilers-tests.yaml">.github/workflows/compilers-tests.yaml</a></p>
-<p>These tests use a series of docker images to test compilation of various gem5 conifgurations with different compilers.</p>
+<p>These tests are specified directly in a GitHub Action workflow: <a href="https://github.com/gem5/gem5/blob/v24.0/.github/workflows/compiler-tests.yaml">.github/workflows/compilers-tests.yaml</a></p>
+<p>These tests use a series of Docker images to test compilation of various gem5 conifgurations with different compilers.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="9" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <h2 id="testlib-tests">TestLib Tests</h2>
 <p>TestLib tests are the most important tests in gem5.<br />
 These tests run gem5 simulations and verify the output of the simulation.<br />
 The tests are written in Python and use the &quot;testlib&quot; framework to run the simulations and verify the output.</p>
-<p>The tests are run using the <code>./main.py</code> command in the &quot;test&quot; directory of the gem5 repository.</p>
+<p>The tests are run using the <code>./main.py</code> command in the <code>test</code> directory of the gem5 repository.</p>
 <p>It's useful to just focus on a subdirectory of tests when running tests:</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-shell">./main.py run gem5/memory
 </code></pre>
 <p>The above will only run the &quot;quick&quot; tests in the &quot;tests/gem5/memory&quot; directory.<br />
-The &quot;quick&quot; tests are the testlib tests run in the CI pipline. To run the tests in the &quot;daily&quot; or &quot;weekly&quot; test suites, you can use the <code>--length</code> to specify <code>long</code> or <code>very-long</code> (<code>quick</code> is the <code>length</code> default).</p>
+The &quot;quick&quot; tests are the testlib tests run in the CI pipeline. To run the tests in the &quot;daily&quot; or &quot;weekly&quot; test suites, you can use the <code>--length</code> to specify <code>long</code> or <code>very-long</code> (<code>quick</code> is the <code>length</code> default).</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="10" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <p>The <code>./main.py list</code> command can be used to list all the tests in a directory, which we'll demonstrate here:</p>
@@ -178,7 +184,7 @@ The &quot;quick&quot; tests are the testlib tests run in the CI pipline. To run 
 ./main.py list --length long gem5/memory
 <span class="hljs-meta prompt_">
 # </span><span class="language-bash">lists all the very long tests <span class="hljs-keyword">in</span> tests/gem5/memory: Those run <span class="hljs-keyword">in</span> the Weekly Tests.</span>
-./main.py lists --length very-long gem5/memory
+./main.py list --length very-long gem5/memory
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="11" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
@@ -236,7 +242,7 @@ a = verifier.MatchRegex(m5_exit_regex)
     valid_isas=(constants.all_compiled_tag,),
 )
 </code></pre>
-<p>While not specified directly we could determine whether the tests runs as <code>quick</code>, <code>long</code>, or <code>very-long</code> by with a <code>length</code> which accepts <code>constants.quick_tag</code>, <code>constants.long_tag</code>, or the <code>constants.very_long_tag</code> as an arguments (default is <code>constants.quick_tag</code>).</p>
+<p>While not specified directly we could determine whether the tests runs as <code>quick</code>, <code>long</code>, or <code>very-long</code> with a <code>length</code> which accepts <code>constants.quick_tag</code>, <code>constants.long_tag</code>, or <code>constants.very_long_tag</code> as arguments (default is <code>constants.quick_tag</code>).</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="15" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <p>View these tests with:</p>
@@ -263,19 +269,19 @@ TestUID:tests/gem5/m5_util/test_exit.py:m5_exit_test-ALL-x86_64-opt:m5_exit_test
 <p><strong>Note</strong>: This will try and build &quot;ALL/gem5.opt&quot; each time you run the tests.<br />
 This can be time consuming.<br />
 You can pre-build the ALL/gem5.opt build with <code>scons build/ALL/gem5.opt -j$(nproc)</code> then, when running <code>./main.py run gem5/m5_util</code> add the <code>--skip-build</code> flag to skip the build step: <code>./main.py run --skip-build gem5/m5_util</code>.</p>
-<p>If you want/need to build at this step pass <code>-j$(nproc)</code> to the <code>./main.py run</code> command.</p>
+<p>If you want/need to build at this step, pass <code>-j$(nproc)</code> to the <code>./main.py run</code> command.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="17" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <h3 id="exercise-creating-a-testlib-test">Exercise: Creating a TestLib Test</h3>
 <p>Go to <a href="../../materials/06-Contributing/">materials/06-Contributing/02-testing/01-testlib-example</a>.</p>
 <p>Move &quot;01-testlib-example&quot; to &quot;tests/gem5/&quot; in the gem5 repository.</p>
-<p>Provided in &quot;test_example.py&quot; is the <code>gem5_verify_cinfig</code> function which is used to define testlib tests</p>
+<p>Provided in &quot;test_example.py&quot; is the <code>gem5_verify_config</code> function which is used to define testlib tests.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="18" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">gem5_verify_config(
     name=<span class="hljs-string">&quot;test-example-1&quot;</span>, <span class="hljs-comment"># Name of the test. Must be unique.</span>
     verifiers=(), <span class="hljs-comment"># Outside exit-code zero check, additional  to be added.</span>
-    fixtures=(), <span class="hljs-comment"># Fixtures: this is laregely deprecated and can be ignored.</span>
+    fixtures=(), <span class="hljs-comment"># Fixtures: this is largely deprecated and can be ignored.</span>
     config=joinpath(), <span class="hljs-comment"># The path to the config script.</span>
     config_args=[], <span class="hljs-comment"># The arguments to be passed to the config script.</span>
     valid_isas=(constants.arm_tag), <span class="hljs-comment"># Need to run on ARM ISA</span>
@@ -284,24 +290,26 @@ You can pre-build the ALL/gem5.opt build with <code>scons build/ALL/gem5.opt -j$
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="19" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
-<p>In this exercise achieve the following.<br />
-After each step run the tests to verify the changes.:<br />
-<code>./main.py run gem5/01-testing-example</code></p>
+<p>In this exercise we will do the following:</p>
 <ol>
 <li>Create a test that runs the <code>example_config.py</code> script without any arguments and verifies it runs correctly.</li>
 <li>Have this test use the <code>--to-print</code> argument to print &quot;Arm Simulation Completed.&quot; at the end of the simulation.</li>
 <li>Update this test with a verifier that checks the output of the simulation after the run is complete.</li>
 <li>Write a second test that does the same as the first test but with a different output message (inclusive of a verifier).</li>
 </ol>
+<p>After each step run the tests to verify the changes:<br />
+<code>./main.py run gem5/01-testing-example</code></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="20" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <h3 id="hints-and-tips">Hints and tips</h3>
 <ul>
 <li>Adding <code>-vvv</code> to the end of the test command will give you more information about the test, particularly if an error occurs.</li>
 <li>Look at the other tests in &quot;tests/gem5&quot; for examples of how to write tests.</li>
-<li>You can pre-build the ARM/gem5.opt build.<br />
-<code>scons build/ARM/gem5.opt -j</code>nproc<code>then, when running</code>./main.py run gem5/02-testing<code>add the</code>--skip-build` flag to skip the build step.</li>
+<li>You can pre-build the ARM/gem5.opt build using</li>
 </ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">scons build/ARM/gem5.opt -j$(<span class="hljs-built_in">nproc</span>)
+</code></pre>
+<p>Then, when running <code>./main.py run gem5/02-testing</code>, add the <code>--skip-build</code> flag to skip the build step.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-theme="gem5" lang="en-US" data-marpit-pagination="21" style="--paginate:true;--theme:gem5;" data-marpit-pagination-total="21">
 <h2 id="congratulations">Congratulations!</h2>
